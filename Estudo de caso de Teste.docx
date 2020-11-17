@@ -1,0 +1,30 @@
+Cenário: Pesquisar por produto Smartphone
+
+Dado esteja na teça inicial da loja virtual;
+Quando acesso cabeçalho;
+E insiro os dados do smatphone desejado;
+E clico em pesquisar;
+Então o sistema exibe a tela de pesquisa de produtos, elencando os resultados;
+Então escolho um dos produtos exibidos;
+E clico sobre o mesmo;
+Então o sistema me redireciona para a tela de detalhes do produto.
+
+
+Cenário (Fluxo de exceção): Pesquisar por produto Smartphone, quando produto inexistente
+
+Dado esteja na teça inicial da loja virtual;
+Quando acesso cabeçalho;
+E insiro os dados do smatphone desejado;
+E clico em pesquisar;
+Então o sistema exibe uma tela de aviso, informando que o produto não foi encontrado
+
+
+Cenário (Fluxo de exceção): Pesquisar por produto não informando dados para a pesquisa
+
+Dado esteja na teça inicial da loja virtual;
+Quando acesso cabeçalho;
+E não insiro nenhum dado no campo de testo destinado para pesquisa;
+E clico em pesquisar;
+Então o sistema exibe uma tela de aviso, informando que não existem resultados para uma pesquisa sem dados.
+
+
